@@ -84,16 +84,16 @@ const Footer = ({
 
                         {/* Social icons under map */}
                         <div className="mt-3 d-flex gap-2">
-                            <a href="#" aria-label="Facebook" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
+                            <a href="https://www.facebook.com/" aria-label="Facebook" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M12 2H9a3 3 0 0 0-3 3v2H3v3h3v6h3v-6h2.5l.5-3H9V5a1 1 0 0 1 1-1h2V2z"/></svg>
                             </a>
-                            <a href="#" aria-label="YouTube" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
+                            <a href="https://www.youtube.com/" aria-label="YouTube" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8.051 1.999h-.102C3.668 2.043 1 2.816 1 8s2.668 5.957 6.949 6.001h.102C12.332 13.957 15 13.184 15 8s-2.668-5.957-6.949-6.001zM6.5 10.5V5.5L10.5 8 6.5 10.5z"/></svg>
                             </a>
-                            <a href="#" aria-label="Twitter" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
+                            <a href="https://x.com/" aria-label="Twitter" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5 9.341-9.334 0-.14 0-.282-.009-.423A6.68 6.68 0 0 0 16 3.542a6.556 6.556 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.084.797A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.381A3.323 3.323 0 0 1 .64 6.575v.041a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.615-.057 3.293 3.293 0 0 0 3.066 2.284A6.588 6.588 0 0 1 .78 13.58 6.32 6.32 0 0 1 0 13.538a9.344 9.344 0 0 0 5.026 1.47"/></svg>
                             </a>
-                            <a href="#" aria-label="Instagram" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
+                            <a href="https://www.instagram.com/" aria-label="Instagram" className="text-light bg-secondary bg-opacity-10 rounded px-3 py-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 3.5A4.5 4.5 0 1 0 8 12.5 4.5 4.5 0 0 0 8 3.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/></svg>
                             </a>
                         </div>

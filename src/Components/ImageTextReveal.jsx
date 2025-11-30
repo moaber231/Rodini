@@ -2,21 +2,28 @@ import React, { useRef, useEffect, useState } from 'react';
 
 const useOnScreen = (ref, rootMargin = '0px') => {
   const [isIntersecting, setIntersecting] = useState(false);
+useEffect(() => {
+    const node = ref.current; // capture ref.current
+    if (!node) return;
 
-  useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setIntersecting(true);
-      },
-      { rootMargin }
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                } else {
+                    entry.target.classList.remove('in-view');
+                }
+            });
+        },
+        { threshold: 0.15 }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(node);
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+        observer.unobserve(node); // use captured node
     };
-  }, [ref, rootMargin]);
-
+}, [ref]);
   return isIntersecting;
 };
 
