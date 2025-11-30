@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 const useOnScreen = (ref, rootMargin = '0px') => {
-  const [isIntersecting, setIntersecting] = useState(false);
+const [isIntersecting] = useState(false);
 useEffect(() => {
     const node = ref.current; // capture ref.current
     if (!node) return;
